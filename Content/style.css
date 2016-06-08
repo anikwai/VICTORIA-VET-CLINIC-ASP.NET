@@ -1,0 +1,307 @@
+﻿
+/*STYLES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #DDD;
+    color: #989595;
+}
+
+.header {
+    padding: 50px 0px 50px 0px;
+    background-image: url(../2.jpg );
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+
+input, select {
+}
+
+.jumbotron {
+    margin-top: 50px;
+    border-radius: 0px;
+    background-color: #0a2d58;
+    opacity: 0.8;
+    color: #FFF;
+    font-family: Gabriola;
+    font-size: small;
+}
+
+.container .jumbotron h1 {
+    font-family: Verdana;
+}
+
+
+
+.meet-the-ceo {
+    border-left: 1px solid yellow;
+}
+
+
+
+.ceo-pix {
+    text-align: center;
+}
+
+div.social-icons, .social-icons a:hover {
+    text-align: center;
+    color: yellow;
+}
+
+.services {
+    margin: 60px 0px 70px 0px;
+}
+
+.mnubtm {
+    padding: 10px 0px 10px 0px;
+    background-color: #285f92;
+    
+}
+
+    .mnubtm a {
+        margin: 10px;
+        color: white;
+    }
+
+.etools-slogan p {
+    margin :50px 0px;
+   
+    font-family: 'Adobe Garamond Pro';
+    text-align :center ;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.contacts-map {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 0px 50px 0px;
+    background-color: #52ab52;
+    text-align: center;
+    color: #FFF;
+    line-height: normal;
+}
+
+.team-top-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 0px 50px 0px;
+    background-color: #4e1717;
+    text-align: center;
+    color: #FFF;
+    line-height: normal;
+    opacity: 0.99;
+}
+
+.team-panel-wrapper {
+    margin-top: -150px;
+}
+
+.top-highlight-text {
+    margin: 50px 0px 100px 0px;
+}
+
+.team-quote p {
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    font-family: Mistral;
+    text-wrap: normal;
+    color: #DDD;
+}
+
+
+/*Fixing the Bootstrap Drop down hover*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: white;
+    color: #DDD;
+    border: none;
+}
+
+/*DENTAL PAGE*/
+.dental-top-wrap {
+    text-align: center;
+    padding: 150px 0px 150px 0px;
+    background-color: darkred;
+    color: white;
+}
+
+.dental-content-wrap .container {
+    margin-top: -100px;
+    background: #FFF;
+  text-align:center ;
+    padding :10%;
+    margin-bottom :50px;
+    
+}
+
+/*SURGERY PAGE*/
+.surgery-top-wrap {
+    text-align: center;
+    padding: 100px 0px 300px 0px;
+    background: url("../../patterns/pattern2.png") top repeat;
+    color: white;
+}
+
+.surgery-content-wrap .container {
+    margin-top: -200px;
+    background: #FFF;
+     padding :50px;
+    margin-bottom :50px;
+}
+
+ #surgical, #surgeon, #laser,#anesthesia, #pain, #caring, #radiographs, #ofa, #ultrasound, #laboratory, #emergency, #wellness, #vaccination {
+   text-align: left;
+  
+
+}
+
+/*DIAGNOSE PAGE*/
+.diagnose-top-wrap {
+    text-align: center;
+    padding: 100px 0px 300px 0px;
+    background: url("../../patterns/pattern8.png") top repeat;
+    color: #285f92;
+}
+
+.diagnose-content-wrap .container{
+    margin-top: -200px;
+    background: #FFF;
+    margin-bottom :50px;
+    padding:50px;
+
+}
+#radiographs.rad-img{
+    margin :100px;
+}
+/*EMERGENCY PAGE*/
+.emergency-top-wrap {
+    text-align: center;
+    padding: 100px 0px 300px 0px;
+    background: url("../../patterns/pattern9.png") top repeat;
+    color: #285f92;
+}
+
+.emergency-content-wrap .container {
+    margin-top: -200px;
+    background: #FFF;
+    padding:50px;
+    margin-bottom :50px;
+}
+
+/*WELLNESS PAGE*/
+.wellness-top-wrap {
+    text-align: center;
+    padding: 100px 0px 300px 0px;
+    background: url("../../patterns/pattern5.png") top repeat;
+    color: #285f92;
+}
+
+.wellness-content-wrap .container {
+    margin-top: -200px;
+    background: #FFF;
+    margin-bottom:200px;
+}
+
+.login-form {
+  width :600px;
+  margin: 100px auto;
+
+  
+}
+
+.help-block {
+    border-left: 1px solid #FFF;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-top: 100px;
+}
+
+.Registration-Form {
+    margin: 200px 0px 90px 0px;
+}
+
+.useful-links {
+    margin: 200px 0px 90px 0px;
+    border-left: 1px solid #FFF;
+    padding: 10px;
+}
+
+.feedback-wrap .container {
+    width: 700px;
+    margin: 100px auto;
+    text-align: left;
+    background: #DDD;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 0px #a4a2a2;
+    border-radius: 5px;
+}
+
+.terms-wrap-top {
+    padding: 200px 0px 300px 0px;
+    background: #285f92;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+   
+}
+
+.terms-wrap .container {
+    width: 700px;
+    margin: -300px auto 100px auto;
+    text-align: left;
+    background: #DDD;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 0px #a4a2a2;
+    border-radius: 5px;
+    overflow :visible ;
+}
+.news{
+    padding:10px 0px 10px 0px;
+    background-color :steelblue ;
+    text-align :center ;
+}
+.news a{
+    color:#DDD;
+}
+.testimonials{
+    padding:50px 0px 50px 0px;
+    background-color:maroon;
+ 
+}
+
+blockquote p{
+    color:#DDD;
+}
+
+.form-control{
+    margin-top:10px;
+
+}
+.btn-default{
+    margin-top:10px;
+}
+
+.video{
+    padding : 50px 0px 50px 0px;
+    background-color:#f2f2f2;
+}
+
+.important-texts{
+    margin-top:30px;
+}
+
+.important-texts col-md-6{
+    padding :10px;
+}

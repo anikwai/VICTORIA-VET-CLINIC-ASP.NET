@@ -1,0 +1,170 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="VVC.master.vb" Inherits="vvc_A2_live.VVC" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>VVC</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" href="Content/bootstrap.min.css" />
+        <link rel="stylesheet" href="Content/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="Content/font-awesome.min.css" />
+        <script src="Scripts/jquery-2.0.0.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      
+            <div class="navbar navbar-inverse navbar navbar-fixed-top ">
+                <div class="container">
+
+                    <div class="col-md-3">
+                         <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <asp:Image runat="server" ImageUrl="~/profile.png" ImageAlign="Baseline" Height="50"
+                            Width="50" />
+
+                    </div>
+                    </div>
+                   
+
+                     <div class="col-md-8">
+                    <div class="navbar-collapse collapse">
+                       
+                            <ul class="nav navbar-nav ">
+                                <li><a runat="server" href="~/default.aspx">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="#" runat="server" class="dropdown-toggle" data-toggle="dropdown">Services<b
+                                        class="caret "></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="dental.aspx">Pet Dental</a></li>
+                                        <li><a href="surgery.aspx">Pet Surgery</a></li>
+                                        <li><a href="diagnosis.aspx">Pet Diagnosis</a></li>
+                                        <li><a href="emergency.aspx">Emergency Care</a></li>
+                                        <li><a href="wellness.aspx">Wellness Plan</a></li>
+                                    </ul>
+
+                                </li>
+                                <li><a runat="server" href="#">Store</a></li>
+                                <li><a runat="server" href="~/team.aspx">Team Profiles</a></li>
+                                <li><a runat="server" href="~/contacts.aspx">Contact Us</a></li>
+
+
+
+                            </ul>
+                       
+
+
+                        <asp:ContentPlaceHolder ID="LoginContent" runat="server">
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <LoggedInTemplate>
+                                 
+                                
+                                   
+                                    <ul class="nav navbar-nav navbar-right">
+
+                                        <li class="dropdown">
+
+                                            <a href="#" runat="server" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-2x">
+                                            </i><b class="caret "></b></a>
+
+                                            <ul class="dropdown-menu">
+                                                <li class="active"><strong>Hi, <%=Session("username") %></li>
+                                                </strong>
+                                                     <div class="divider"></div>
+                                                <li><a href="Dashboard.aspx">Dashboard</a></li>
+                                                <li><a href="#">Manage Payments</a></li>
+                                                <li><a href="#">Make Appointments</a></li>
+                                                <li class="alert-danger">
+                                                    <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage" />
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </LoggedInTemplate>
+                                <AnonymousTemplate>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                            <a href="#" runat="server" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-2x">
+                                            </i><b class="caret "></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active"><strong>Hi, Guest</li>
+                                                </strong>
+                                                     <li class="divider"></li>
+                                                <li>
+                                                    <a href="Login.aspx">Login</a>
+                                                </li>
+                                                <li><a href="register.aspx">Create an Account</a></li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </AnonymousTemplate>
+                            </asp:LoginView>
+                        </asp:ContentPlaceHolder>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+   </div> 
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="maincontents" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+       
+
+                <div class="mnubtm">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <div class="col-md-4">
+                            <a href="#">Blog</a>
+                            <a href="terms.aspx">Terms</a>
+                            <a href="#">Help</a>
+
+                            <a href="feedback.aspx">Feedback</a>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <div class="col-md-4">
+                            <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+                            <a href="http://www.instagram.com"><i class="fa fa-instagram  fa-2x"></i></a>
+                            <a href="http://www.goolge.com"><i class="fa fa-google-plus fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col-3">
+                        <div class=" col-md-4">
+                            <p class="text-right">&copy;<%:DateTime.Now.Year%> Victoria Vet Clinic</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+
+
+</body>
+</html>
